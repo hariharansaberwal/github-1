@@ -4,7 +4,7 @@ import qualified Github.PullRequests as Github
 import Data.List
 
 main = do
-  possiblePullRequest <- Github.pullRequest "thoughtbot" "paperclip" 575
+  possiblePullRequest <- Github.pullRequest "thoughtbot" "paperclip" 580
   case possiblePullRequest of
        (Left error) -> putStrLn $ "Error: " ++ (show error)
        (Right pullRequest) -> putStrLn $ formatPullRequest pullRequest
